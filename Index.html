@@ -16,7 +16,7 @@
     body{
         background-color: white;
         font-family: 'Proximanova opt',sans-serif;
-        border: 1px solid red;
+        /* border: 1px solid red; */
     
         
     }
@@ -44,6 +44,7 @@
         background-color: white;
         display: flex;
         position: fixed;
+        z-index: 5;
 
     
     }
@@ -65,7 +66,7 @@
         /* border: 1px solid darkblue; */
         display: flex;
         align-items: center;
-        margin-left: 30%;
+        margin-left: 21%;
     }
     .mid-item ul{
         display: inline-flex;
@@ -75,8 +76,13 @@
         width: auto;
         margin-right: 30px;
         /* border: 1px solid lawngreen; */
-        color: #4c4d5f;
+        font-size: 17px;
+        width: 84px;
         
+    }
+    .mid-item ul li a{
+        text-decoration: none;
+        color: #4c4d5f;
     }
     .login{
         /* border: 1px solid olivedrab; */
@@ -116,34 +122,116 @@
         background-color: #04906f;
         color: white;
     }
-    .sub-menu-1{
-        display: none;
+    .back-image{
+        width: 100%;
+    }
+    .back-image>img{
+        width: 60%;
+        margin-left: 40%;
+        opacity: 0.1;
+
+
+    }
+    .container-1{
+      /* border: 3px solid rgb(0, 4, 255); */
+      /* background-color: #04906f; */
+      width: 100%;
+      height: 700px;
+      position: relative;
+      bottom: 780px;
+      display: flex;
+     
+    }
+    .container-1>div{
+        /* border: 1px solid black; */
+        height: 400px;
+        width: 400px;
+        
+        
+    }
+    .container-1>div:nth-child(1){
+        margin-left: 10%;
+        margin-top: 15%;
+        width: 500px;
+    }
+    .container-1>div:nth-child(2){
+        margin-left: 11%;
+    margin-top: 122px;
+    width: 630px;
+    }
+    #top-right-image{
+        width: 100%;
+    }
+    .watch{
+        display: flex;
+        gap: 10px;
+        color: #00b289;
+        font-weight: 600;
+        font-size: 1rem;
+    }
+    .child-1-head{
+        font-size: 2.75rem;
+    line-height: 130%;
+    font-family: 'Proximanova opt';
+    font-weight: lighter;
+    color: #4c525a;
+    margin-top: 20px;
+  
+    }
+    .child-1-para{
+        font-weight: 500;
+        font-size: 1.25rem;
+    line-height: 140%;
+    color: #4c525a;
+    margin-top: 20px;
+    }
+    .child-1-input{
+        /* border: 1px solid blue; */
+        margin-top: 40px;
+        display: flex;
+        height: 70px;
+    }
+    .child-1-input>input{
+    height: 70px;
+    margin-bottom: 0;
+    padding-right: 10px;
+    padding-left: 28px;
+    border: 2px solid #01b289;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+    width: 66%;
+    }
+    .startfree-btn{
+        width: 34%;
+    height: 70px;
+    padding-right: 37px;
+    padding-left: 37px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    background-color: #00b289;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: .6px;
+    color: #fff;
+    border: 0;
+    line-height: inherit;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    .startfree-btn:hover{
+        background-color: #099574;
     }
 
-  .navbar ul li:hover .sub-menu-1{
-    display: block;
-    position: absolute;
-    background-color: red;
-    margin-top: 10px;
-    margin-left: -140px;
-  }
-  .navbar ul li:hover .sub-menu-1 ul{
-    display: block;
-    margin: 10px;
-    width: 300px;
-    margin-bottom: 10px;
-    font-family: 'Amerigo-bt roman opt',sans-serif;
-    color: #292a2d;
-    font-size: 22px;
-    line-height: 26px;
-  }
-  .active, .navbar ul li:hover{
-    background-color: #00b289;
-  }
- 
-    
    
-    
+   
+
+
 
 </style>
 <body>
@@ -155,37 +243,10 @@
 
         <div class="mid-item">
             <ul>
-                <li class="active">Product
-
-
-                    <div class="sub-menu-1">
-                      <ul>
-                        <li>
-                            <a href="Index.html"></a>
-                            <h3>Bonsai Workflow</h3>
-                            <p>Look professional, win more clients and manage your business from one place</p>
-                        </li>
-                        <li>
-                            <h3>Bonsai Tax</h3>
-                            <p>Bonsai Tax is built exclusively for self-employed workers to track expenses, maximize tax write-offs, and estimate quarterly taxes</p>
-                        </li>
-                        <li>
-                            <h3>Bonsai Cash</h3>
-                            <p>Manage your finances, save on taxes, and get paid faster.
-                                All with no hidden fees and no minimums.</p>
-                        </li>
-                      </ul>
-
-                    </div>
-
-
-
-
-
-                </li>
-                <li>Templates</li>
-                <li>Pricing</li>
-                <li>Reviews</li>
+                <li><a href="#">Product </a></li>
+                <li><a href="#">Templates</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Reviews</a></li>
             </ul>
         </div>
         
@@ -194,6 +255,28 @@
             <a href="">START FREE</a>
         </div>
 
+    </div>
+    <div class="back-image">
+        <img src="/makeshift-top-3565/images/background-back.png" alt="">
+    </div>
+    <div class="container-1">
+        <div class="child-1">
+            <div class="watch">
+                <img src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e5fd7c602ca7c8e88feb67d_time-tracking%20colour.svg" alt="">
+                <div>Time Tracking</div>
+            </div>
+            <div> <h1 class="child-1-head">The robust time tracker made for your workflow.</h1></div>
+            <div ><p class="child-1-para">Manage your hours with ease with an all-in-one time tracker, timesheets and billing system.</p></div>
+            <div class="child-1-input">
+                <input type="text" placeholder="Enter Your Email">
+                <a href="Google.com" class="startfree-btn">START FREE</a>
+            </div>
+        </div>
+
+        
+        <div class="child-2">
+            <img id="top-right-image" src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e6bbbc1e37d0b57e90a317c_time-tracking-img-min.png" alt="">
+        </div>
     </div>
 
 </body>
