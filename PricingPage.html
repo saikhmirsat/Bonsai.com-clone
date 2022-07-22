@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="Icon" type="image" href="/makeshift-top-3565/images/Icon.jpeg">
+    <title img> im The #1 Freelance Product Suite - Bonsai</title>
+</head>
+<style>
+    /* Togglr button */
+   .switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #00b289;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #00b289;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #00b289;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+
+
+/* End toggle button */
+
+
+
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    body{
+        background-color: white;
+        font-family: 'Proximanova opt',sans-serif;
+        /* border: 1px solid red; */
+        box-sizing: border-box;
+        color: #4c525a;
+    
+     /* Navbar    */
+    }
+    .navbar{
+        border: 1px solid red;
+        height: 90px;
+        width: 100%;
+        padding: 12px 9% 12px 9%;
+        background-color: white;
+        display: flex;
+        position: fixed;
+        z-index: 5;
+
+    
+    }
+    .logo{
+        /* border: 1px solid rgb(21, 0, 255); */
+        width: 152px;
+        height: 60px;
+        /* margin-top: 12px; */
+        /* margin-bottom: 12px; */
+        display: flex;
+        align-items: center;
+        
+    }
+    .logo>a>img{
+        width: 100%;
+        /* border: 1px solid rgb(21, 0, 255); */
+    }
+    .mid-item{
+        /* border: 1px solid darkblue; */
+        display: flex;
+        align-items: center;
+        margin-left: 21%;
+    }
+    .mid-item ul{
+        display: inline-flex;
+        list-style: none;
+    }
+    .mid-item ul li{
+        width: auto;
+        margin-right: 30px;
+        /* border: 1px solid lawngreen; */
+        font-size: 17px;
+        width: 84px;
+        
+    }
+    .mid-item ul li a{
+        text-decoration: none;
+        color: #4c4d5f;
+    }
+    .login{
+        /* border: 1px solid olivedrab; */
+        display: inline-flex;
+        align-items: center;
+        margin-left: 60px;
+    }
+    .login a{
+        margin-left: 15px;
+        text-decoration: none;
+        padding: 12px 27px 9px;
+        border: 1px solid #00b289;
+        border-radius: 4px;
+        color: rgb(12, 2, 2);
+        font-size: 13px;
+        line-height: 16px;
+        font-weight: 700;
+        text-align: center;
+        letter-spacing: .6px;
+        padding-right: 22px;
+        padding-left: 22px;
+        
+    }
+    .login>a:nth-child(1){
+        color:#00b289;
+        border: 1px solid #00b289;;
+    }
+    .login>a:nth-child(2){
+        color:#f9fbfb;
+        background-color: #00b289;;
+    }
+    .login>a:nth-child(1):hover{
+        background-color: #00b289;
+        color: white;
+    }
+    .login>a:nth-child(2):hover{
+        background-color: #04906f;
+        color: white;
+    }
+
+    /* Navbar end */
+
+
+    /* Heading part */
+    .back-image{
+        width: 100%;
+    }
+    .back-image>img{
+        width: 60%;
+        margin-left: 40%;
+        opacity: 0.1;
+
+    }
+   .heading{
+     /* border: 3px solid rgb(0, 4, 255); */
+      width: 100%;
+      height: 119px;
+      position: absolute;
+      bottom: 450px; 
+      display: flex;  
+      align-items: center;
+      justify-content: center;
+   }
+   .heading-child{
+    /* border: 1px solid red; */
+    margin-left: 20px;
+   }
+   .heading-child>h1{
+    font-family: 'Proximanova opt';
+    font-weight: 400;
+    color: #4c525a;
+    font-size: 2.5rem;
+    line-height: 120%;
+
+   }
+   .heading-child:nth-child(1){
+    margin-right: 100px;
+   }
+   .heading-child:nth-child(2){
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 1.22px;
+    color: #4c525a;
+   }
+   #month-free-image{
+    z-index: -2;
+    margin-bottom: 50px;
+   }
+   #yearly{
+    position: absolute;
+    margin-left: 40%;
+    opacity: .65;
+    color: #4c4d5f;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1.22px;
+   }
+   /* HEADING part End */
+ #container-1{
+    /* border: 1px solid coral; */
+    height: auto;
+    width: 80%;
+    position: absolute;
+    bottom: -570px;
+    margin-left: 10%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+ 
+ }
+ .container-1-child{
+    /* border: 1px solid royalblue; */
+    position: relative;
+    padding: 6% 8%;
+    padding-top: 100px;
+    background-color: #f4f6f9;
+    
+ }
+ .img-div{
+    display: flex;
+    gap: 9px;
+    
+ }
+ 
+ .container-1-child-heading{
+    font-weight: 600;
+    font-size: 1.625rem;
+    line-height: 1.4;
+    color: #4c525a;
+ }
+ .container-1-child-para{
+    max-width: 90%;
+    color: #4c525a;
+ }
+ .price{
+    border-bottom: 2px solid #00b289;
+    padding-bottom: 7px;
+    color: #4c525a;
+    font-size: 62px;
+    line-height: 72px;
+    font-weight: 600;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    width: 90%;
+
+ }
+ .price>span:nth-child(1){
+    position: relative;
+    top: -27px;
+    margin-right: 10px;
+    font-size: 30px;
+    line-height: 28px;
+    font-weight: 400;
+    margin-right: 0px;
+ }
+ .price>span:nth-child(2){
+    font-size: 1.625rem;
+    line-height: 1.4;
+    font-weight: 400;
+ }
+ .img-div{
+    color: #4c4d5f;
+    font-size: 16px;
+    line-height: 50px;
+ }
+ .br-div{
+    width: 70%;
+    line-height: 2;
+    
+
+ }
+ .btn{
+    border:1px solid  #00b289;
+   height: 60px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: #00b289;
+   border-radius: 4px;
+   cursor: pointer; 
+   margin-top: 30px;
+ }
+ .btn>a{
+    
+   color: white;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: .7px;
+    cursor: pointer;
+ }
+ .btn:hover{
+    background-color:#04906f;
+ }
+ #btn-1{
+    margin-top: 56%;
+ }
+ #btn-2{
+    margin-top: 56%;
+ }
+
+ /* #popular-tag{
+    position: absolute;
+    left: auto;
+    top: 50px;
+    right: -109px;
+    bottom: auto;
+    width: 360px;
+    padding: 11px 100px;
+    background-color: #01b289;
+    transform: rotate(45deg);
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    
+ } */
+#mid-heading{
+    margin-top: 650px;
+    text-align: center;
+    position: sticky;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 140%;
+    color: #4c525a;
+    font-family: 'Proximanova opt';
+}
+#container-2{
+    border: 1px solid red;
+    width: 80%;
+    height: 700px;
+    margin: auto;
+    margin-top: 20px;
+}
+#container-2>div{
+    border: 1px solid blue;
+    height: 150px;
+    margin-bottom: 10px;
+}
+
+.container-2-child{
+    display: flex;
+}
+.container-2-child-1{
+    border:1px solid #00b289;
+    width: 80%;
+    display: flex;
+    align-items: center;  
+}
+.container-2-child-1>div{
+    margin-left: 30px;
+}
+.container-2-child-2{
+    border:1px solid #00b289;
+    width: 20%;
+   display: flex;
+}
+.container-2-child-1>div>h3{
+    font-weight: 600;
+    font-size: 1.375rem;
+    line-height: 1.4;
+    
+}
+.container-2-child-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.month-price{
+    font-size: .875rem;
+    line-height: 133%;
+    font-weight: 400;
+}
+#con-2-chi-1-img{
+    display: flex;
+}
+#con-2-chi-1-img>div{
+    font-weight: 600;
+}
+#cont-2-img{
+    text-decoration: none;
+    display: flex;
+    
+}
+
+</style>
+<body>
+    <!-- Nav BAR -->
+    <div class="navbar">
+        <div class="logo">
+            <a href="Index.html"><img src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e5fd7c602ca7cd432feb68e_bonsai-logo.svg" alt=""></a>
+        </div>
+        
+        <div class="mid-item">
+            <ul>
+                <li><a href="#">Product </a></li>
+                <li><a href="#">Templates</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Reviews</a></li>
+            </ul>
+        </div>
+        
+        <div class="login">
+            <a href="">LOGIN</a>
+            <a href="">START FREE</a>
+        </div>
+        
+    </div>
+
+    <!-- END NAVBAR -->
+    
+    <div class="back-image">
+       <img src="/Project-1/makeshift-top-3565/images/pricingPage_back.png" alt="">
+    </div>
+
+    <!-- END-------background image -->
+
+    <!-- Heading part -->
+    <div class="heading">
+        <div class="heading-child">
+            <h1>Plans & Pricing
+            </h1>
+        </div>
+        <div class="heading-child" id="monthly">MONTHLY</div>
+        <div id="toggle" class="heading-child">
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+              </label>
+        </div>
+
+        <!-- heading part end -->
+        
+            <img id="month-free-image" src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e9d7255d3886a6103fb12a9_FREE-text.svg" alt="">
+
+        <div class="heading-child" id="yearly">YEARLY</div>
+        
+    </div>
+    <!-- heading part end -->
+
+    <!-- First Three box  -->
+    <div id="container-1">
+            <div class="container-1-child">
+                <div class="container-1-child-heading">Starter</div>
+                <p class="container-1-child-para">Ideal for freelancers and contractors just starting out.</p>
+
+                <div class="price">
+                    <span>$</span>
+                    24
+                    <span>/MONTH</span>
+                </div>
+                <div class="img-div">
+                    <img src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e668ac7510abc1d0f5c1c14_green-tick.svg" alt="">
+                    <div>All Templates</div>
+                </div>
+
+                <div class="img-div" >
+                    <img src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e668ac7510abc1d0f5c1c14_green-tick.svg" alt="">
+                    <div>Unlimited Clients & Projects</div>
+                </div>
+                <div class="img-div" >
+                    <img src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e668ac7510abc1d0f5c1c14_green-tick.svg" alt="">
+                    <div>Invoicing & Payments</div>
+                </div>
+                <div class="img-div" >
+                    <img src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e668ac7510abc1d0f5c1c14_green-tick.svg" alt="">
+                    <div>Proposals & Contracts</div>
+                </div>
+                <div class="img-div" >
+                    <img src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e668ac7510abc1d0f5c1c14_green-tick.svg" alt="">
+                    <div>Tasks & Time Tracking</div>
+                </div>
+                <div class="img-div" >
+                    <img src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e668ac7510abc1d0f5c1c14_green-tick.svg" alt="">
+                    <div>Client CRM</div>
+                </div>
+                <div class="img-div" >
+                    <img src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e668ac7510abc1d0f5c1c14_green-tick.svg" alt="">
+                    <div>Expense Tracking</div>
+                </div>
+                <div class="img-div" >
+                    <img src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e668ac7510abc1d0f5c1c14_green-tick.svg" alt="">
+                    <div>Up to 5 Project Collaborators</div>
+                </div>
+
+                <div class="btn" id="btn-1">
+                    <a href="#">START FREE</a>
+                </div>
+               
+            </div>
+         <div class="container-1-child">
+            <div class="container-1-child-heading">Professional</div>
+                <p class="container-1-child-para">Everything a growing independent business needs to thrive.</p>
+
+                <div class="price">
+                    <span>$</span>
+                    39
+                    <span>/MONTH</span>
+                </div>
+
+                <!-- <div id="popular-tag">
+                    <div>MOST Popular</div>
+                </div> -->
+                <div class="img-div">
+                    <img src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e668ac7510abc1d0f5c1c14_green-tick.svg" alt="">
+                    <div>Everything in Starter plus...</div>
+                </div>
+
+                <div class="img-div" >
+                    <img src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e668ac7510abc1d0f5c1c14_green-tick.svg" alt="">
+                    <div>Custom Branding</div>
+                </div>
+                <div class="img-div" >
+                    <img src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e668ac7510abc1d0f5c1c14_green-tick.svg" alt="">
+                    <div>Forms & Questionnaires</div>
+                </div>
+                <div class="img-div" >
+                    <img src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e668ac7510abc1d0f5c1c14_green-tick.svg" alt="">
+                    <div>Workflow Automations</div>
+                </div>
+                <div class="img-div" >
+                    <img src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e668ac7510abc1d0f5c1c14_green-tick.svg" alt="">
+                    <div>Client Portal</div>
+                </div>
+                <div class="img-div" >
+                    <img src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e668ac7510abc1d0f5c1c14_green-tick.svg" alt="">
+                    <div>Calendly Integration</div>
+                </div>
+                <div class="img-div" >
+                    <img src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e668ac7510abc1d0f5c1c14_green-tick.svg" alt="">
+                    <div>Zapier Integration</div>
+                </div>
+                <div class="img-div" >
+                    <img src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e668ac7510abc1d0f5c1c14_green-tick.svg" alt="">
+                    <div>Up to 15 Project Collaborators</div>
+                </div>
+
+                <div class="btn" id="btn-2">
+                    <a href="#">START FREE</a>
+                </div>
+         </div>
+         <div class="container-1-child">
+            <div class="container-1-child-heading">Business</div>
+                <p class="container-1-child-para">The perfect package for small businesses and agencies.</p>
+
+                <div class="price">
+                    <span>$</span>
+                    79
+                    <span>/MONTH</span>
+                </div>
+                <div class="img-div" >
+                    <img src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e668ac7510abc1d0f5c1c14_green-tick.svg" alt="">
+                    <div class="br-div">Everything in Starter and Professional plus...</div>
+                </div>
+
+                <div class="img-div" >
+                    <img src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e668ac7510abc1d0f5c1c14_green-tick.svg" alt="">
+                    <div>Subcontractor Management</div>
+                </div>
+                <div class="img-div" >
+                    <img src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e668ac7510abc1d0f5c1c14_green-tick.svg" alt="">
+                    <div  class="br-div">Hiring Agreement Templates (1099 contracts)</div>
+                </div>
+                <div class="img-div" >
+                    <img src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e668ac7510abc1d0f5c1c14_green-tick.svg" alt="">
+                    <div>Subcontractor Onboarding</div>
+                </div>
+                <div class="img-div" >
+                    <img src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e668ac7510abc1d0f5c1c14_green-tick.svg" alt="">
+                    <div>Talent Pool</div>
+                </div>
+                <div class="img-div" >
+                    <img src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e668ac7510abc1d0f5c1c14_green-tick.svg" alt="">
+                    <div class="br-div">3 Team Seats (additional seats $9/month)</div>
+                </div>
+                <div class="img-div" >
+                    <img src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e668ac7510abc1d0f5c1c14_green-tick.svg" alt="">
+                    <div>Accountant Access</div>
+                </div>
+                <div class="img-div" >
+                    <img src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e668ac7510abc1d0f5c1c14_green-tick.svg" alt="">
+                    <div>Connect Multiple Bank Accounts</div>
+                </div>
+                <div class="img-div" >
+                    <img src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e668ac7510abc1d0f5c1c14_green-tick.svg" alt="">
+                    <div>Unlimited Subcontractors</div>
+                </div>
+                <div class="img-div" >
+                    <img src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e668ac7510abc1d0f5c1c14_green-tick.svg" alt="">
+                    <div>Unlimited Project Collaborators</div>
+                </div>
+
+                <div class="btn">
+                    <a href="#">START FREE</a>
+                </div>
+         </div>
+    </div>
+    <h1 id="mid-heading">Super charge your work with add-ons</h1>
+
+    <div id="container-2">
+        <div class="container-2-child">
+            <div class="container-2-child-1">
+                <div>
+                    <h3>Collaborators</h3>
+                    <p>Invite other users to specific projects for limited access and functionality.</p>
+                </div>
+               
+            </div>
+            <div  class="container-2-child-2">
+               <h1>Free</h1>
+            </div>
+        </div>
+        
+        <div class="container-2-child">
+            <div class="container-2-child-1">
+                <div>
+                    <h3>Collaborators</h3>
+                    <p>Invite other users to specific projects for limited access and functionality.</p>
+                </div>
+               
+            </div>
+            <div  class="container-2-child-2">
+               <div>
+                <h1>$9</h1>
+                <div class="month-price">/MONTH</div>
+               </div>
+               
+            </div>
+        </div>
+
+        <div class="container-2-child">
+            <div class="container-2-child-1">
+                <div>
+                    <h3>Collaborators</h3>
+                    <p>Invite other users to specific projects for limited access and functionality.</p>
+                    <a href="#" id="cont-2-img">
+                        <div>LEARN MORE</div>
+                        <img src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e668ac7510abc913a5c1c13_learn-arrow.svg" alt="">
+                    </a>
+                </div>
+               
+            </div>
+            <div  class="container-2-child-2">
+                <div>
+                    <h1>$10 </h1>
+                    <div class="month-price">/MONTH</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
