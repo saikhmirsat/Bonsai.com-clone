@@ -90,13 +90,14 @@ input:checked + .slider:before {
     /* Navbar    */
     .navbar{
         /* border: 1px solid red; */
-        height: 90px;
+        height: 70px;
         width: 100%;
         padding: 12px 9% 12px 9%;
         background-color: white;
         display: flex;
         position: fixed;
         z-index: 5;
+        
 
     
     }
@@ -118,7 +119,7 @@ input:checked + .slider:before {
         /* border: 1px solid darkblue; */
         display: flex;
         align-items: center;
-        margin-left: 21%;
+        margin-left: 16%;
     }
     .mid-item ul{
         display: inline-flex;
@@ -129,7 +130,7 @@ input:checked + .slider:before {
         margin-right: 30px;
         /* border: 1px solid lawngreen; */
         font-size: 17px;
-        width: 84px;
+        width: 93px;
         
     }
     .mid-item ul li a{
@@ -173,6 +174,9 @@ input:checked + .slider:before {
     .login>a:nth-child(2):hover{
         background-color: #04906f;
         color: white;
+    }
+    .down-arr{
+        width: 10px;
     }
 
     /* Navbar end */
@@ -638,29 +642,29 @@ color: #4c4d5f;
 
 </style>
 <body>
-    <!-- Nav BAR -->
-    <div class="navbar">
-        <div class="logo">
-            <a href="Index.html"><img src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e5fd7c602ca7cd432feb68e_bonsai-logo.svg" alt=""></a>
-        </div>
-        
-        <div class="mid-item">
-            <ul>
-                <li><a href="#">Product </a></li>
-                <li><a href="#">Templates</a></li>
-                <li><a href="/makeshift-top-3565/PricingPage.html">Pricing</a></li>
-                <li><a href="/makeshift-top-3565/Reviews.html">Reviews</a></li>
-            </ul>
-        </div>
-        
-        <div class="login">
-            <a href="/makeshift-top-3565/Login.html">LOGIN</a>
-            <a href="/makeshift-top-3565/SigupPage.html">START FREE</a>
-        </div>
-        
+   <!-- Nav BAR -->
+   <div class="navbar">
+    <div class="logo">
+        <a href="Index.html"><img src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e5fd7c602ca7cd432feb68e_bonsai-logo.svg" alt=""></a>
     </div>
+    
+    <div class="mid-item">
+        <ul>
+            <li><a href="#">Product <img class="down-arr" src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5f5a14486154c507c79e758f_001-down-chevron.svg" alt=""> </a></li>
+            <li><a href="#">Templates <img class="down-arr" src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5f5a14486154c507c79e758f_001-down-chevron.svg" alt=""> </a></li>
+            <li><a href="/makeshift-top-3565/PricingPage.html">Pricing</a></li>
+            <li><a href="/makeshift-top-3565/Reviews.html">Reviews</a></li>
+        </ul>
+    </div>
+    
+    <div class="login">
+        <a href="/makeshift-top-3565/Login.html">LOGIN</a>
+        <a href="/makeshift-top-3565/SigupPage.html">START FREE</a>
+    </div>
+    
+</div>
 
-    <!-- END NAVBAR -->
+<!-- END NAVBAR -->
     
     <div class="back-image">
        <img src="/makeshift-top-3565/image/pricingPage_back.png" alt="">

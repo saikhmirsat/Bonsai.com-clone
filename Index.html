@@ -19,31 +19,16 @@
     
         
     }
-    .blue-background{
-        left: auto;
-    top: -88%;
-    right: -26%;
-    width: 90vw;
-    height: 80vw;
-    position: absolute;
-    bottom: auto;
-    z-index: -1;
-    display: block;
-    border-radius: 6.6vw;
-    background-color: #f2faff;
-    transform: rotate(-23deg);
-    
-    
-    }
     .navbar{
         /* border: 1px solid red; */
-        height: 90px;
+        height: 70px;
         width: 100%;
         padding: 12px 9% 12px 9%;
         background-color: white;
         display: flex;
         position: fixed;
         z-index: 5;
+        
 
     
     }
@@ -65,7 +50,7 @@
         /* border: 1px solid darkblue; */
         display: flex;
         align-items: center;
-        margin-left: 21%;
+        margin-left: 16%;
     }
     .mid-item ul{
         display: inline-flex;
@@ -76,12 +61,53 @@
         margin-right: 30px;
         /* border: 1px solid lawngreen; */
         font-size: 17px;
-        width: 84px;
+        width: 93px;
         
     }
     .mid-item ul li a{
         text-decoration: none;
         color: #4c4d5f;
+    }
+    .login{
+        /* border: 1px solid olivedrab; */
+        display: inline-flex;
+        align-items: center;
+        margin-left: 60px;
+    }
+    .login a{
+        margin-left: 15px;
+        text-decoration: none;
+        padding: 12px 27px 9px;
+        border: 1px solid #00b289;
+        border-radius: 4px;
+        color: rgb(12, 2, 2);
+        font-size: 13px;
+        line-height: 16px;
+        font-weight: 700;
+        text-align: center;
+        letter-spacing: .6px;
+        padding-right: 22px;
+        padding-left: 22px;
+        
+    }
+    .login>a:nth-child(1){
+        color:#00b289;
+        border: 1px solid #00b289;;
+    }
+    .login>a:nth-child(2){
+        color:#f9fbfb;
+        background-color: #00b289;;
+    }
+    .login>a:nth-child(1):hover{
+        background-color: #00b289;
+        color: white;
+    }
+    .login>a:nth-child(2):hover{
+        background-color: #04906f;
+        color: white;
+    }
+    .down-arr{
+        width: 10px;
     }
     .login{
         /* border: 1px solid olivedrab; */
@@ -582,26 +608,29 @@ color: #4c4d5f;
 </style>
 <body>
     <!-- <div class="blue-background"></div> -->
-    <div class="navbar">
-        <div class="logo">
-            <a href="Index.html"><img src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e5fd7c602ca7cd432feb68e_bonsai-logo.svg" alt=""></a>
-        </div>
-
-        <div class="mid-item">
-            <ul>
-                <li><a href="#">Product </a></li>
-                <li><a href="#">Templates</a></li>
-                <li><a href="/makeshift-top-3565/PricingPage.html">Pricing</a></li>
-                <li><a href="/makeshift-top-3565/Reviews.html">Reviews</a></li>
-            </ul>
-        </div>
-        
-        <div class="login">
-            <a href="/makeshift-top-3565/Login.html">LOGIN</a>
-            <a href="/makeshift-top-3565/SigupPage.html">START FREE</a>
-        </div>
-
+   <!-- Nav BAR -->
+   <div class="navbar">
+    <div class="logo">
+        <a href="Index.html"><img src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e5fd7c602ca7cd432feb68e_bonsai-logo.svg" alt=""></a>
     </div>
+    
+    <div class="mid-item">
+        <ul>
+            <li><a href="#">Product <img class="down-arr" src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5f5a14486154c507c79e758f_001-down-chevron.svg" alt=""> </a></li>
+            <li><a href="#">Templates <img class="down-arr" src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5f5a14486154c507c79e758f_001-down-chevron.svg" alt=""> </a></li>
+            <li><a href="/makeshift-top-3565/PricingPage.html">Pricing</a></li>
+            <li><a href="/makeshift-top-3565/Reviews.html">Reviews</a></li>
+        </ul>
+    </div>
+    
+    <div class="login">
+        <a href="/makeshift-top-3565/Login.html">LOGIN</a>
+        <a href="/makeshift-top-3565/SigupPage.html">START FREE</a>
+    </div>
+    
+</div>
+
+<!-- END NAVBAR -->
     <div class="back-image">
         <img src="/makeshift-top-3565/image/background-back.png" alt="">
     </div>
