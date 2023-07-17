@@ -1,4 +1,4 @@
-# Bonsai.com-clone
+# Bonsai.com-Clone
 
 This website is a clone of Bonsai.com <br/>
 and Bonsai is building the global operating system for freelance work.
