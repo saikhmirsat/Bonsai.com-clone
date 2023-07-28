@@ -4,6 +4,7 @@ This website is a clone of Bonsai.com <br/>
 and Bonsai is building the global operating system for freelance work.
 Deployed Project Link - https://musical-daffodil-372c32.netlify.app/
 
+
 ## Solo Project
 
 Duration - 5days
